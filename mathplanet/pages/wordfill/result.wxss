@@ -1,0 +1,65 @@
+.page.result-page {
+    padding: 40rpx;
+    background: #9fbeeb;
+    min-height: 100vh;
+}
+
+.summary {
+    text-align: center;
+    margin-bottom: 30rpx;
+}
+
+.big {
+    font-size: 36rpx;
+    display: block;
+    margin-bottom: 10rpx;
+}
+
+.counts {
+    font-size: 28rpx;
+    color: #666;
+}
+
+.list {
+    margin-top: 10rpx;
+}
+
+.item {
+    padding: 16rpx;
+    border-bottom: 1rpx solid #eee;
+}
+
+.q {
+    font-size: 28rpx;
+}
+
+.a,
+.u {
+    font-size: 24rpx;
+    color: #333;
+    display: block;
+    margin-top: 6rpx;
+}
+
+.status {
+    float: right;
+    font-size: 24rpx;
+}
+
+.actions {
+    margin-top: 30rpx;
+    display: flex;
+    justify-content: center;
+    gap: 20rpx;
+}
+
+.btn {
+    padding: 12rpx 30rpx;
+    background: #4CAF50;
+    color: #fff;
+    border-radius: 8rpx;
+}
+
+.alt {
+    background: #2196F3;
+}

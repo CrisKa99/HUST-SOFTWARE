@@ -1,0 +1,116 @@
+<!-- index.wxml -->
+<!-- index.wxml -->
+<view class="page">
+  <!-- 添加星空背景层（放在 page 内最顶） -->
+  <image class="bg-image" src="../../icon/bg.jpg" mode="aspectFill"></image>
+  <view class="stars"></view>
+
+  <!-- 优化后的上部用户区 -->
+  <view class="user">
+    <view wx:if="{{!hasUserInfo}}" class="login-container">
+      <view class="login-card">
+        <!-- <text class="login-title">欢迎来到数学星球</text> -->
+        <view class="avatar-section">
+          <button class="avatar-btn" open-type="chooseAvatar" bindchooseavatar="onChooseAvatar">
+            <view class="avatar-placeholder">
+              <text class="avatar-icon">👤</text>
+              <!-- <text class="avatar-text">选择头像</text> -->
+            </view>
+
+          </button>
+
+        </view>
+        <view class="nickname-section">
+          <view class="nickname-input-container">
+            <input class="nickname-input" type="text" placeholder="请输入昵称" value="{{tempNickName}}"
+              bindinput="onNicknameInput" maxlength="10" />
+            <button class="confirm-btn" bindtap="setNickname">确认</button>
+          </view>
+        </view>
+
+
+
+        <!-- <view wx:if="{{tempAvatarUrl || tempNickName}}" class="info-preview">
+           <text class="preview-item" wx:if="{{tempAvatarUrl}}">头像✓</text> -->
+          <!-- <text class="preview-item" wx:if="{{tempNickName}}">昵称✓</text> -->
+        <!-- </view> --> 
+
+        <view class="login-tips">
+          
+        </view>
+        
+      </view>
+      
+    </view>
+    
+
+    <block wx:else>
+      <view class="user-info-card">
+        <image class="avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <view class="words">
+          <text class="name">你好呀，{{userInfo.nickName}} ~</text>
+          <button class="signbutton" wx:if="{{!sign}}" bindtap="handlesign">
+            <text class="iconfont icon-xuexiquan">点击签到打卡哦</text>
+          </button>
+          <block wx:else>
+            <text class="hellotxt">
+              <text class="iconfont icon-icon-test">打卡</text>
+              <text class="total">{{totalday}}</text>
+              <text class="iconfont">天，加油！</text>
+            </text>
+          </block>
+        </view>
+      </view>
+    </block>
+  </view>
+  <!-- 新的星球主题主区（模块区替换） -->
+  <view class="main planet-main">
+    <view class="module-grid">
+      <navigator class="module-card" hover-class="none" url="/pages/jichumode/jichumode" bindtap="play1select">
+        <view class="planet-card">
+          <view class="planet-left">
+            <image class="planet-surface planet-1" src="../../icon/jichu.png" mode="aspectFill"></image>
+          </view>
+          <view class="module-info">
+            <text class="module-title">基础模式</text>
+            <text class="module-sub">星球·入门</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator class="module-card" hover-class="none" url="/pages/qianghuamode/qianghuamode" bindtap="play2select">
+        <view class="planet-card">
+          <view class="planet-left">
+            <image class="planet-surface planet-1" src="../../icon/qianghua.png" mode="aspectFill"></image>
+          </view>
+          <view class="module-info">
+            <text class="module-title">强化模式</text>
+            <text class="module-sub">星球·强化</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator class="module-card" hover-class="none" url="/pages/wujinmode/wujinmode" bindtap="play3select">
+        <view class="planet-card">
+          <view class="planet-left">
+            <image class="planet-surface3 planet-1" src="../../icon/wujin.png" mode="aspectFill"></image>
+          </view>
+          <view class="module-info">
+            <text class="module-title">无尽挑战</text>
+            <text class="module-sub">星球·无尽</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator class="module-card" hover-class="none" url="/pages/wordfill/wordfill" bindtap="play4select">
+        <view class="planet-card">
+          <view class="planet-left">
+            <image class="planet-surface planet-1" src="../../icon/word.png" mode="aspectFill"></image>
+          </view>
+          <view class="module-info">
+            <text class="module-title">单词填空</text>
+            <text class="module-sub">星际词汇</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+    <view class="module-hint">点击行星进入对应模块 · 每次进入题目随机</view>
+  </view>
+</view>

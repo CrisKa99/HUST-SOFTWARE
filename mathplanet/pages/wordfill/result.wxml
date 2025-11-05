@@ -1,0 +1,22 @@
+<view class="page result-page">
+  <view class="summary">
+    <text class="big">练习结果</text>
+    <text class="counts">正确：{{correctCount}}  错误：{{wrongCount}}</text>
+  </view>
+
+  <view class="list">
+    <block wx:for="{{list}}" wx:for-item="it" wx:key="index">
+      <view class="item">
+        <text class="q">{{it.chinese}}</text>
+        <text class="a">正确：{{it.answer}}</text>
+        <!-- <text class="u">你的：{{it.userAnswer}}</text> -->
+        <text class="status" style="color: {{it.correct ? '#4CAF50' : '#F44336'}}; position: relative; left: 0rpx; top: -51rpx">{{it.correct ? '正确' : '错误'}}</text>
+      </view>
+    </block>
+  </view>
+
+  <view class="actions">
+    <button bindtap="goHome" class="btn">返回首页</button>
+    <button bindtap="retryAll" class="btn alt">继续填空</button>
+  </view>
+</view>

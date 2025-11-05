@@ -1,0 +1,46 @@
+<!--pages/threegradeanswer/threegradeanswer.wxml-->
+<view class="page">
+  <image class="bg-image" src="../../icon/egg.jpg" mode="aspectFill"></image>
+<view class="three">
+  <navigator hover-class="none" bindtap="mode8select" url="../calculate/calculate">
+    <view class="mode">
+        <view class="txt">
+          两位数加减两位数
+        </view>
+      </view>
+    <!-- <image class="firstpng" mode="widthFix" lazy-load src="https://i.loli.net/2020/12/17/cQu9fHCK7sN3jBL.png"/>  -->
+  </navigator>
+  <navigator hover-class="none" bindtap="mode9select" url="../calculate/calculate">
+    <view class="mode">
+        <view class="txt">
+          三位数加减三位数
+        </view>
+      </view>
+    <!-- <image class="secondpng" mode="widthFix" lazy-load src="https://i.loli.net/2020/12/17/Ds1bLfAapmK4tUJ.png"/> -->
+  </navigator>
+
+  <navigator hover-class="none" bindtap="mode10select" url="../calculate/calculate">
+    <view class="mode">
+        <view class="txt">
+          四位数与一位数四则运算
+        </view>
+      </view>
+    <!-- <image class="fourthpng" mode="widthFix" lazy-load src="https://i.loli.net/2020/12/17/CengM6xbWmTKrS4.png"/> -->
+    
+  </navigator>
+  <navigator hover-class="none" bindtap="mode11select" url="../calculate/calculate">
+    <view class="mode">
+        <view class="txt">
+          三位数与一位数四则运算
+        </view>
+      </view>
+    <!-- <image class="thirdpng" mode="widthFix" lazy-load src="https://i.loli.net/2020/12/17/XpR9ySt6lfW5iuw.png"/> -->
+  </navigator>
+
+</view>
+  
+</view>  
+
+
+  
+

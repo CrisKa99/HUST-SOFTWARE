@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/wujinmode/wujinmode",
+    "pages/wordfill/wordfill",
+    "pages/wordfill/result",
+    "pages/about/about",
+    "pages/jichumode/jichumode",
+    "pages/qianghuamode/qianghuamode",
+    "pages/onegradeanswer/onegradeanswer",
+    "pages/twogradeanswer/twogradeanswer",
+    "pages/threegradeanswer/threegradeanswer",
+    "pages/calculate/calculate"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#97beeb",
+    "navigationBarTitleText": "算数星球",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "backgroundColor": "#97beeb",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/icon/index.png",
+        "selectedIconPath": "/icon/index.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "/icon/about.png",
+        "selectedIconPath": "/icon/about.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userInfo": {
+      "desc": "用于获取您的用户信息，提供个性化服务"
+    }
+    
+  },
+  
+  
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

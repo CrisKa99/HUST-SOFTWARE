@@ -1,0 +1,27 @@
+<!--pages/jichumode/jichumode.wxml-->
+
+<view class="page">
+  <image class="bg-image" src="../../icon/egg.jpg" mode="aspectFill"></image>
+
+  <view class="grade">
+    <navigator hover-class="none" bindtap="grade1select" url="/pages/onegradeanswer/onegradeanswer">
+    <view class="allgrade firstpng"> 
+      <view class="one">一 年 级</view>
+    </view>
+  </navigator>
+  <navigator hover-class="none" bindtap="grade2select" url="/pages/twogradeanswer/twogradeanswer">
+    <!-- <image style="position: relative; left: 0rpx; top: 115rpx" class="secondpng" mode="widthFix" lazy-load src="https://ftp.bmp.ovh/imgs/2020/12/aca5f69a14d357f7.png"/> -->
+  <view class="allgrade firstpng">
+    <view class="one">二 年 级</view>
+  </view>
+  </navigator>
+  <navigator hover-class="none" bindtap="grade3select" url="/pages/threegradeanswer/threegradeanswer">
+    <!-- <image style="position: relative; left: 0rpx; top: 127rpx" class="thirdpng" mode="widthFix" lazy-load src="https://ftp.bmp.ovh/imgs/2020/12/c740c02b925dd360.png"/> -->
+  <view class="allgrade firstpng">
+    <view class="one">三 年 级</view>
+  </view>
+  </navigator>
+  </view>
+  
+  <!-- <image class="fourthpng" mode="widthFix" lazy-load src="https://ftp.bmp.ovh/imgs/2020/12/a560f97e224b5e88.png"/> -->
+</view>

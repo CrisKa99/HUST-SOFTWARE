@@ -1,0 +1,31 @@
+<!--pages/onegradeanswer/onegradeanswer.wxml-->
+<view class="page">
+  <image class="bg-image" src="../../icon/egg.jpg" mode="aspectFill"></image>
+
+  <view class="one">
+    <navigator hover-class="none" bindtap="mode1select" url="../calculate/calculate">
+      <view class="mode">
+        <view class="txt">
+           100以内两位数加减一位数
+        </view>
+      </view>
+      <!-- <image class="firstpng" mode="widthFix" lazy-load > -->
+    </navigator>
+    <navigator hover-class="none" bindtap="mode2select" url="../calculate/calculate">
+      <!-- <image class="secondpng" mode="widthFix" lazy-load src="https://i.loli.net/2020/12/17/UQw6fq3agBDINpC.png" /> -->
+    <view class="mode">
+      <view class="txt">
+        整十数加减
+      </view>
+    </view>
+    </navigator>
+    <navigator hover-class="none" bindtap="mode3select" url="../calculate/calculate">
+      <!-- <image class="thirdpng" mode="widthFix" lazy-load src="https://i.loli.net/2020/12/17/X6r5zfOb8comyEV.png" /> -->
+     <view class="mode">
+      <view class="txt">
+        加减混合运算
+      </view>
+    </view>
+    </navigator>
+  </view>
+</view>

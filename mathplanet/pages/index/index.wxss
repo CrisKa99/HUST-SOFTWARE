@@ -1,0 +1,807 @@
+/**index.wxss**/
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 10rpx;
+}
+
+/* 昵称输入区域 */
+.nickname-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+.nickname-input input {
+  width: 200rpx;
+  height: 60rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 10rpx;
+  padding: 0 20rpx;
+  font-size: 28rpx;
+  margin-right: 20rpx;
+}
+
+.nickname-input button {
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 24rpx;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* 让 page 占满视口高度 */
+  width: 100%;
+  /* background: urlno-repeat center center fixed; */
+  position: relative;
+}
+
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(3rpx);
+}
+
+/* 保证用户区（顶部）占用自然高度，主区撑满剩余空间 */
+.user {
+  z-index: 2;
+  padding: 24rpx 24rpx 0;
+}
+
+.avatar {
+  width: 105rpx;
+  height: 105rpx;
+  margin-top: 30rpx;
+  margin-left: 80rpx;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 30rpx;
+  margin-top: 0rpx;
+  margin-left: 33rpx;
+  font-weight: 650;
+  color: #000;
+  width: 500rpx;
+  height: 52rpx;
+}
+
+.hello {
+
+  margin-top: 500rpx;
+}
+
+.hellotxt {
+  margin-top: 9rpx;
+  margin-left: 30rpx;
+  font-size: 35rpx;
+  color: #000;
+  font-weight: 700;
+  width: 400rpx;
+}
+
+.nosign {
+  margin-top: 40rpx;
+  font-size: 30rpx;
+  color: #000;
+  font-weight: 600;
+}
+
+.nickname {
+
+  line-height: 25rpx;
+}
+
+.words {
+  margin-top: 20rpx;
+  margin-left: 15rpx;
+  width: 400rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstblock {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+}
+
+.firstleft {
+  margin-top: 0rpx;
+  margin-left: 0rpx;
+  width: 300rpx;
+
+}
+
+.firstright {
+  margin-top: 0rpx;
+  margin-left: 0rpx;
+  width: 300rpx;
+
+}
+
+.second {
+  margin-top: 20rpx;
+  margin-left: 48rpx;
+  width: 700rpx;
+}
+
+swiper {
+  margin-top: 30rpx;
+  margin-left: 48rpx;
+  width: 630rpx;
+
+}
+
+.image1 {
+  width: 630rpx;
+  border-radius: 20rpx;
+}
+
+.image2 {
+  width: 630rpx;
+  border-radius: 20rpx;
+}
+
+.image3 {
+  width: 630rpx;
+  border-radius: 20rpx;
+}
+
+.register_image {
+  width: 620rpx;
+  margin-left: 52rpx;
+}
+
+.firstleftn {
+  width: 320rpx;
+  height: 460rpx;
+  margin-left: 45rpx;
+  margin-top: 50rpx;
+}
+
+.firstrightn {
+  width: 320rpx;
+  height: 460rpx;
+  margin-left: 10rpx;
+  margin-top: 50rpx;
+}
+
+.signbutton {
+  width: 400rpx;
+  height: 80rpx;
+  margin-left: 0rpx;
+  padding-left: 0rpx;
+  margin-top: 20rpx;
+  line-height: inherit;
+  border: none;
+  background-color: transparent;
+  border-radius: 0;
+  font-size: 20rpx;
+}
+
+.total {
+  color: red;
+  font-size: 40rpx;
+}
+
+
+
+
+/* 提示文本 */
+.module-hint {
+  margin-top: 18rpx;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 20rpx;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+/* 星球主题主区：撑满剩余高度，内容居中 */
+.planet-main {
+  flex: 1;
+  /* 占满剩余高度 */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24rpx;
+  box-sizing: border-box;
+}
+
+/* 单列四行布局：模块按列垂直排列并均分可用高度 */
+.module-grid {
+  width: 100%;
+  max-width: 920rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* 垂直排列 */
+  gap: 20rpx;
+  align-items: center;
+  justify-content: space-between;
+  /* 均匀分布四个卡片 */
+  box-sizing: border-box;
+  padding: 10rpx 12rpx;
+}
+
+
+
+/* 调整内部行星大小以适应更宽的卡片 */
+.planet-card {
+  width: 100%;
+  height: 100%;
+
+}
+
+/* .planet-surface {
+  width: 120rpx;
+  height: 120rpx;
+  margin-bottom: 12rpx;
+} */
+
+/* 卡片内部：左图右文，行星尽量大以撑满卡片 */
+.module-grid {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18rpx;
+  padding: 12rpx;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.module-card {
+  width: 100%;
+  flex: 1;
+  min-height: 120rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.04));
+  box-shadow: 0 10rpx 24rpx rgba(4, 24, 48, 0.18);
+  display: flex;
+  align-items: stretch;
+  box-sizing: border-box;
+  padding: 0;
+  /* border-radius: 112rpx; */
+
+}
+
+.module-card:nth-child(1) {
+  background: linear-gradient(135deg, #74a5ef 0%, #a3d498 100%);
+  box-shadow: 0 10rpx 30rpx rgba(102, 126, 234, 0.4);
+
+}
+
+.module-card:nth-child(2) {
+  background: linear-gradient(135deg, #d8d8aa 0%, #7b98f1 100%);
+  box-shadow: 0 10rpx 30rpx rgba(102, 126, 234, 0.4);
+}
+
+.module-card:nth-child(3) {
+  background: linear-gradient(135deg, #f4d2ab 0%, #ef8d99 100%);
+  box-shadow: 0 10rpx 30rpx rgba(102, 126, 234, 0.4);
+}
+
+.module-card:nth-child(4) {
+  background: linear-gradient(135deg, #f6b2f0 0%, #ebebaa 100%);
+  box-shadow: 0 10rpx 30rpx rgba(102, 126, 234, 0.4);
+}
+
+/* 卡片内部容器 */
+.planet-card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+/* 左侧行星容器：约占 46% 宽度，行星撑满此容器 */
+.planet-left {
+  flex: 0 0 46%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rpx;
+  box-sizing: border-box;
+  height: 100%;
+  /* overflow: hidden; */
+  overflow: visible;
+  /* 添加这个确保有高度 */
+  min-height: 120rpx;
+  /* 确保最小高度 */
+  border-radius: 50%;
+}
+
+/* 行星本体：占左侧容器的大部分并为圆形 */
+.planet-surface,
+.planet-surface3 {
+  width: 230rpx !important;
+  /* 明确尺寸 */
+  height: 220rpx !important;
+  /* 明确尺寸 */
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  object-fit: cover;
+  /* image 时生效 */
+  overflow: visible;
+  border-radius: 50%;
+  /* box-shadow: 0 10rpx 30rpx rgba(0, 0, 0, 0.28), inset 0 -8rpx 16rpx rgba(0, 0, 0, 0.12); */
+}
+
+.planet-surface3 {
+  overflow: hidden;
+}
+
+/* 右侧文字信息 */
+.module-info {
+  flex: 1;
+  padding: 24rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.module-title {
+  font-size: 50rpx;
+  font-weight: 700;
+  color: #484646;
+  margin-bottom: 8rpx;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-weight: 800;
+  font-size: 38rpx;
+  /* color: #ffffff; */
+}
+
+.module-sub {
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 34rpx;
+  /* color: rgba(255, 255, 255, 0.95); */
+  color: #f1f5f7;
+  margin-bottom: 8rpx;
+  text-shadow: 0 1rpx 2rpx rgba(0, 0, 0, 0.6);
+}
+
+.module-desc {
+  font-size: 18rpx;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 28rpx;
+}
+
+
+
+/* 小屏优化 */
+@media (max-width: 420px) {
+  .planet-left {
+    flex: 0 0 44%;
+    padding: 8rpx;
+  }
+
+  .module-title {
+    font-size: 50rpx;
+  }
+
+  .module-desc {
+    font-size: 16rpx;
+  }
+
+  .module-card {
+    border-radius: 14rpx;
+  }
+}
+
+/* 页面整体占满视口，高度分配：user 顶部不变，主区占满剩余高度 */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 顶部用户区保持自然高度（不占用剩余空间） */
+.user {
+  flex: 0 0 auto;
+}
+
+/* 主区占满剩余高度 */
+.planet-main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 12rpx;
+  box-sizing: border-box;
+}
+
+/* 单列四行：模块竖直排列并均分高度 */
+.module-grid {
+  flex: 1 1 auto;
+  /* 占满 planet-main 的剩余高度 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* 保证四个模块纵向均匀分布 */
+  align-items: stretch;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* 每个卡片平均分配高度并尽量撑满宽度 */
+
+
+/* 去掉最后一个卡片的下边距，避免占用多余空间 */
+.module-card:last-child {
+  margin-bottom: 0;
+}
+
+/* 内部左图右文布局，行星撑满左侧容器（保留原来行星样式） */
+.planet-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.planet-left {
+  flex: 0 0 46%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12rpx;
+  box-sizing: border-box;
+}
+
+.planet-surface {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 右侧文字区域 */
+.module-info {
+  flex: 1;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+/* 小屏优化 */
+@media (max-width: 420px) {
+  .module-card {
+    min-height: 100rpx;
+    margin-bottom: 10rpx;
+  }
+
+  .planet-left {
+    flex: 0 0 44%;
+    padding: 8rpx;
+  }
+
+  .module-info {
+    padding: 12rpx;
+  }
+}
+
+/**index.wxss**/
+
+/* 用户区域整体样式 */
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 40rpx; */
+  padding: 0 30rpx;
+}
+
+/* 登录容器 */
+.login-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-card {
+  display: flex;
+  background: rgba(151, 190, 235, 0.5);
+  /* 半透明背景 */
+  backdrop-filter: blur(20px);
+  /* 毛玻璃效果 */
+  -webkit-backdrop-filter: blur(20px);
+  /* 兼容Safari */
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* 半透明边框 */
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    /* 外层阴影 */
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  /* background: rgba(255, 255, 255, 0.95); */
+  border-radius: 30rpx;
+  /* padding: 40rpx; */
+  width: 99%;
+  /* max-width: 600rpx; */
+  box-shadow: 0 10rpx 30rpx rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10rpx);
+  border: 1rpx solid rgba(255, 255, 255, 0.2);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-title {
+  display: block;
+  text-align: center;
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 40rpx;
+  font-family: "PingFang SC", sans-serif;
+}
+
+/* 头像选择区域 */
+.avatar-section {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rpx;
+  margin-left: 60rpx;
+  text-align: center;
+}
+
+.avatar-btn {
+  display: flex;
+  text-align: center;
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  /* border: 2rpx solid rgba(255, 255, 255, 0.3); */
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.avatar-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 4rpx 10rpx rgba(102, 126, 234, 0.3);
+}
+
+.avatar-placeholder {
+  /* width: 50px;
+  height: 50px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+}
+
+.avatar-icon {
+  font-size: 48rpx;
+  margin-bottom: 8rpx;
+}
+
+.avatar-text {
+  font-size: 24rpx;
+  color: white;
+  font-weight: 500;
+}
+
+/* 昵称输入区域 */
+.nickname-section {
+  margin-bottom: 3rpx;
+  padding: 0 10rpx;
+}
+
+.nickname-input-container {
+  display: flex;
+  align-items: center;
+  /* background: #f8f9fa; */
+  border-radius: 20rpx;
+  padding: 5rpx;
+  border: 2rpx solid #e9ecef6e;
+  transition: all 0.3s ease;
+  /* overflow:hidden; */
+}
+
+.nickname-input-container:focus-within {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3rpx rgba(102, 126, 234, 0.1);
+
+}
+
+.nickname-input {
+  flex: 1;
+  height: 50rpx;
+  /* padding: 0 25rpx; */
+  font-size: 28rpx;
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-bottom: 20rpx;
+  color: #fcfcfc;
+}
+
+.nickname-input::placeholder {
+  color: #fcfcfc;
+}
+
+.confirm-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  /* border: none; */
+  border-radius: 15rpx;
+  /* height: 70rpx; */
+  width: 120rpx !important;
+  font-size: 26rpx;
+  font-weight: 600;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120rpx !important;
+  max-width: 120rpx !important;
+
+}
+
+
+
+/* 信息预览 */
+.info-preview {
+  background: #e8f5e8;
+  border-radius: 15rpx;
+  padding: 5rpx;
+  margin-bottom: 2rpx;
+  margin-right: 10rpx;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  /* border-left: 1rpx solid #4caf50; */
+}
+
+.preview-item {
+  display: block;
+  font-size: 26rpx;
+  color: #2e7d32;
+  margin-bottom: 10rpx;
+  text-align: center;
+}
+
+.preview-item:last-child {
+  margin-bottom: 0;
+}
+
+/* 登录提示 */
+.login-tips {
+  text-align: center;
+  font-size: 24rpx;
+  color: #fff;
+  /* margin-top: 2rpx; */
+}
+
+/* 已登录状态样式 */
+.user-info-card {
+  display: flex;
+  align-items: center;
+  /* background: rgba(255, 255, 255, 0.95); */
+  background: rgba(151, 190, 235, 0.5);
+  /* 半透明背景 */
+  backdrop-filter: blur(20px);
+  /* 毛玻璃效果 */
+  -webkit-backdrop-filter: blur(20px);
+  /* 兼容Safari */
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* 半透明边框 */
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    /* 外层阴影 */
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 25rpx;
+  padding: 25rpx 35rpx;
+  width: 90%;
+  max-width: 600rpx;
+  box-shadow: 0 8rpx 25rpx rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10rpx);
+  /* display:flex; */
+}
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 3rpx solid #fff;
+  box-shadow: 0 4rpx 15rpx rgba(0, 0, 0, 0.2);
+}
+
+.words {
+  margin-left: 25rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-size: 30rpx;
+  font-weight: 650;
+  color: #333;
+  margin-bottom: 8rpx;
+}
+
+.signbutton {
+  /* background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%); */
+  color: white;
+  border: none;
+  border-radius: 20rpx;
+  height: 60rpx;
+  font-size: 24rpx;
+  font-weight: 600;
+  margin-top: 2rpx;
+  /* box-shadow: 0 4rpx 12rpx rgba(255, 107, 107, 0.3); */
+}
+
+.hellotxt {
+  font-size: 26rpx;
+  color: #333;
+  font-weight: 600;
+}
+
+.total {
+  /* color: #ff6b6b; */
+  font-weight: 700;
+  margin: 0 8rpx;
+}
+
+/* 响应式调整 */
+@media (max-width: 375px) {
+  .login-card {
+    padding: 30rpx;
+    width: 95%;
+  }
+
+  .avatar-btn {
+    width: 140rpx;
+    height: 140rpx;
+  }
+
+  .user-info-card {
+    padding: 20rpx 25rpx;
+    width: 95%;
+  }
+}

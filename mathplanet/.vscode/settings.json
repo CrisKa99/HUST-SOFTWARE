@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "*.cjson": "jsonc",
+        "*.wxss": "css",
+        "*.wxs": "javascript",
+        "*.wxml": "html"
+    },
+    "trae.chatLanguage": "auto",
+    "trae.tab.enableAutoImport": false,
+    "trae.tab.cue": true,
+    "trae.tab.enableRename": false,
+    "trae.tab.enablePartialAccept": false
+}

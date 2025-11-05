@@ -1,0 +1,42 @@
+<!--pages/twogradeanswer/twogradeanswer.wxml-->
+<view class="page">
+  <image class="bg-image" src="../../icon/egg.jpg" mode="aspectFill"></image>
+
+  <view class="two">
+    <navigator hover-class="none" bindtap="mode4select" url="../calculate/calculate">
+      <view class="mode">
+        <view class="txt">
+          100以内加减
+        </view>
+      </view>
+      <!-- <image class="firstpng" mode="widthFix" lazy-load src="https://i.loli.net/2020/12/17/a74RNK8Vl2wz9qv.png"/> -->
+    </navigator>
+    <navigator hover-class="none" bindtap="mode5select" url="../calculate/calculate">
+      <view class="mode">
+        <view class="txt">
+          加减混合运算
+        </view>
+      </view>
+      <!-- <image class="thirdpng" mode="widthFix" lazy-load src="https://i.loli.net/2020/12/17/y2aeYTMmD1s6UgG.png"/> -->
+    </navigator>
+    <navigator hover-class="none" bindtap="mode6select" url="../calculate/calculate">
+      <view class="mode">
+        <view class="txt">
+           整百整千加减
+        </view>
+      </view>
+      <!-- <image class="secondpng" mode="widthFix" lazy-load src="https://i.loli.net/2020/12/17/7CeGRVDuX1B9WzF.png" /> -->
+
+    </navigator>
+    <navigator hover-class="none" bindtap="mode7select" url="../calculate/calculate">
+      <view class="mode">
+        <view class="txt">
+           乘法表内乘除法
+        </view>
+      </view>
+      <!-- <image class="fourthpng" mode="widthFix" lazy-load src="https://i.loli.net/2020/12/17/lYmCn7aiyMkpsFT.png" /> -->
+    </navigator>
+  </view>
+
+
+</view>

@@ -1,0 +1,25 @@
+<!--pages/wujinmode/wujinmode.wxml-->
+<view class="wujin">
+  <image class="bg-image" src="../../icon/bg3.jpg" mode="aspectFill"></image>
+  <text class="text1">
+    你好 ~
+  </text>
+  <text class="text2">
+    强化模式题目
+  </text>
+  <text class="text3">
+    都根据错题生成
+  </text>
+  <text class="text4">
+    细心，这次一定没有问题！
+  </text>
+  <navigator class="begin" hover-class="none" url="../calculate/calculate" >
+    <view class="tap" style="position: relative; left: 0rpx; top: 60rpx">
+      开始答题   
+  <text class="iconfont icon-dianji"></text>
+    </view>
+  </navigator>
+ 
+  
+    
+</view>

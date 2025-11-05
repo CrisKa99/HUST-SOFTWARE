@@ -1,0 +1,25 @@
+<!--pages/wujinmode/wujinmode.wxml-->
+<view class="wujin">
+  <image class="bg-image" src="../../icon/bgg.jpg" mode="aspectFill"></image>
+  <text class="text1">
+    注意！！
+  </text>
+  <text class="text2">
+    无尽挑战模式
+  </text>
+  <text class="text3">
+    没有尽头~
+  </text>
+  <text class="text4">
+    加油，少年，祝你好运！
+  </text>
+  <navigator class="begin" hover-class="none" url="../calculate/calculate" >
+    <view class="tap" style="position: relative; left: 0rpx; top: 60rpx">
+      开始答题   
+  <text class="iconfont icon-dianji"></text>
+    </view>
+  </navigator>
+ 
+  <!-- <image class="image" mode="widthFix" lazy-load src="https://i.loli.net/2020/12/11/w6rlsFyktGn4cdR.png"/> -->
+    
+</view>
