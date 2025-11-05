@@ -1,0 +1,112 @@
+/* pages/onegradeanswer/onegradeanswer.wxss */
+.firstpng{
+  width: 600rpx;
+  margin-top: 150rpx;
+}
+
+.secondpng{
+  width: 600rpx;
+  margin-top: 60rpx;
+}
+
+.thirdpng{
+  width: 600rpx;
+  margin-top: 60rpx;
+}
+
+
+.fourthpng{
+  width: 600rpx;
+  margin-top: 60rpx;
+}
+
+.three{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* 垂直居中 */
+        flex: 1;
+        /* 占据剩余空间 */
+        padding: 40rpx;
+        gap: 40rpx;
+        /* 设置等间距 */
+}
+
+.page {
+  display: flex;
+  /* background-color: #9fbeeb; */
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+  /* display: flex; */
+  flex-direction: column;
+}
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  filter: blur(5rpx);
+}
+
+.bg-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(153, 191, 235, 0.4);
+}
+
+.mode {
+  width: 600rpx;
+  height: 200rpx;
+  border-radius: 15px;
+  backdrop-filter: blur(20px);
+  /* 毛玻璃效果 */
+  -webkit-backdrop-filter: blur(20px);
+  /* 兼容Safari */
+  /* border-radius: 50px; */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* 半透明边框 */
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    /* 外层阴影 */
+    inset 0 1px 0 rgba(145, 184, 252, 0.2);
+
+
+  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  /* text-align: center; */
+  align-items: center;
+  justify-content: center;
+
+}
+
+.txt {
+  width: 100%;
+  padding: 20rpx 0;
+  height: 100%;
+  /* 改为100%占满父容器 */
+  text-align: center;
+  font-size: 25px;
+  white-space: pre-line;
+  color: rgba(236, 241, 247, 0.7);
+  line-height: 1.5;
+  /* 正常行高 */
+  display: flex;
+  /* 使用flex */
+  align-items: center;
+  /* 垂直居中 */
+  justify-content: center;
+  /* 水平居中 */
+  flex-direction: column;
+  /* 多行文字垂直排列 */
+}

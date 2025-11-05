@@ -1,0 +1,42 @@
+<view class="wordfill-page">
+  <!-- 整屏滑动的单词展示 -->
+  <swiper class="word-swiper" current="{{current}}" indicator-dots="{{false}}" autoplay="{{false}}" circular="{{false}}"
+    disable-programmatic-animation="{{false}}" bindchange="onSwiperChange" duration="200">
+    <block wx:for="{{items}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+      <swiper-item>
+        <view class="slide">
+          <view class="slide-inner" style="height: 733rpx; display: block; box-sizing: border-box">
+            <text class="chinese">{{item.chinese}}</text>
+            <view class="word-box">
+              <block wx:for="{{item.chars}}" wx:for-item="ch" wx:for-index="ci" wx:key="ci">
+                <view class="char-cell">
+                  <input wx:if="{{ch.isBlank}}" class="letter-input" maxlength="1" value="{{ch.value}}"
+                    data-index="{{index}}" data-ci="{{ci}}" bindinput="onCharInput" bindfocus="onInputFocus"
+                    focus="{{focusKey === (index + '_' + ci)}}" type="text" confirm-type="done" />
+                  <text wx:else class="letter-show">{{ch.char}}</text>
+                </view>
+              </block>
+            </view>
+            <!-- 不同状态显示不同按钮 -->
+            <view class="submit-area">
+              <block wx:if="{{item.state === 'pending'}}">
+                <button class="submit-btn" bindtap="submitSingle" data-index="{{index}}">
+                  提交本题
+                </button>
+              </block>
+              <block wx:elif="{{item.state === 'correct'}}">
+                <button class="next-btn" bindtap="goNext" data-index="{{index}}">下一个</button>
+              </block>
+              <block wx:elif="{{item.state === 'wrong'}}">
+                <button class="retry-btn" bindtap="retry" data-index="{{index}}">再思考一次</button>
+                <button class="show-btn" bindtap="reveal" data-index="{{index}}">看答案</button>
+              </block>
+            </view>
+          </view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 错题时的遮罩，拦截滑动与交互 -->
+  <view wx:if="{{overlay}}" class="overlay" catchtouchmove="noop"></view>
+</view>

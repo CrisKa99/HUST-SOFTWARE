@@ -1,0 +1,38 @@
+<!-- pages/about/about.wxml -->
+<view class="about">
+  <!-- 添加星空背景层（放在 about 内最顶） -->
+  <image class="bg-image" src="../../icon/bg.jpg" mode="aspectFill"></image>
+  <view class="stars"></view>
+  <view class="logo">
+    <!-- logo -->
+    <image class="logoimage" mode="widthFix" lazy-load src="../../icon/logo.png" />
+  </view>
+  <view class="abouttxt">
+    <!-- 使用指南 -->
+    <navigator class="direct" bindtap="handledirect" hover-class="none">
+      <text class="directdetail">使用说明</text>
+      <text class="iconfont icon-zhinan"></text>
+    </navigator>
+    <!-- 分割线 -->
+    <!-- <view class="string1"></view> -->
+    <navigator class="gitee" bindtap="handlegitee" hover-class="none">
+      <text class="giteetxt">项目开源地址</text>
+      <text class="iconfont icon-gitee-fill-round"></text>
+    </navigator>
+    <!-- <view class="string3"></view> -->
+    <!-- 联系我们 -->
+    <button class="contact" hover-class="none" open-type="contact" style="width:100%">
+      <text class="contacttxt">有问题，联系我们</text>
+      <text class="iconfont icon-weixin"></text>
+    </button>
+    <!-- 分割线 -->
+    <!-- <view class="string2"></view> -->
+    <!-- 联系我们 -->
+    <!-- 分割线 -->
+    <navigator class="aboutus" bindtap="handleabout" hover-class="none">
+      <text class="aboutustxt">关于</text>
+      <text class="iconfont icon-ziyuan163"></text>
+    </navigator>
+    <!-- <view class="string4"></view> -->
+  </view>
+</view>
